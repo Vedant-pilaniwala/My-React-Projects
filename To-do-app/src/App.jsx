@@ -15,12 +15,17 @@ function App() {
     setToDoList(newItemList);
   }
 
+  const handleDeleteOnClick = (task) => {
+    const newItemList = toDoList.filter((item) => item.task !== task);
+    setToDoList(newItemList);
+  }
+
   return (
     <div className="ml-auto mr-auto mt-5 border-2 border-solid rounded-3xl w-6/12 h-auto p-3 bg-gradient-to-r from-green-400 to-blue-500">
       <Header />
       <AddToDo onNewItem={handleOnNewItem} />
       {toDoList.length === 0 && <NoTaskMsg></NoTaskMsg> }
-      <ToDoLIst TodoItems={toDoList} />
+      <ToDoLIst TodoItems={toDoList} onDeleteClick={handleDeleteOnClick} />
     </div>
   );
 }
