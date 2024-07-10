@@ -1,4 +1,3 @@
-import { IoAddCircleOutline } from "react-icons/io5";
 import { useState } from "react";
 
 function AddToDo({ onNewItem }) {
@@ -48,7 +47,7 @@ function AddToDo({ onNewItem }) {
                 id="addBtn"
                 disabled = {newTask === "" && newDueDate === "" || newDueDate === "" || newTask === "" ? true : false}
             >
-                Add<IoAddCircleOutline />
+                Add
             </button>
         </center>
     );

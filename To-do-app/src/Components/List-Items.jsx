@@ -1,4 +1,4 @@
-import { AiFillDelete } from "react-icons/ai";
+
 
 function ListItem({ task , date , onDeleteClick }) {
 
@@ -19,7 +19,7 @@ function ListItem({ task , date , onDeleteClick }) {
                     className="rounded-md ml-8 mb-4 p-2 w-2/12 bg-gradient-to-r from-red-600 to-red-700 hover:brightness-110 active:brightness-125 text-white text-2xl"
                     onClick={() => {onDeleteClick(task)}}
                 >
-                    Delete<AiFillDelete />
+                    Delete
                 </button>
             </div>
         </>
