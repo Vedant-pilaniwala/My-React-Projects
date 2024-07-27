@@ -4,7 +4,7 @@ export default function ImageCard({ image }) {
     const tags = image.tags.split(',');
 
     return (
-        <div className="max-w-sm m-3 overflow-hidden rounded-md shadow-2xl shadow-slate-500">
+        <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 max-w-sm m-3 overflow-hidden rounded-md shadow-2xl shadow-slate-500">
             <img src={image.webformatURL} alt="" className="w-full" />
             <div className="px-3 py-4">
                 <div className="w-full px-3 text-purple-800 font-bold text-xl">
